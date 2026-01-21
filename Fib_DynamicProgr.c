@@ -17,18 +17,18 @@ int main(){
         return 1;
     }
 
-    //Initialize memoization array
-    for(int i = 0; i < 100; i++){
+    //Initialize the memoization array
+    for(int i = 0;i < 100;i++){
         arr[i] = -1;
     }
 
     printf("Fibonacci sequence:\n");
-    for(int i = 0; i < number; i++){
+    for(int i = 0;i < number;i++){
         printf("%d ", fib(i));
     }
 
     printf("\nValues in memoization array:\n");
-    for(int i = 0; i < number; i++){
+    for(int i = 0;i < number;i++){
         printf("%d ", arr[i]);
     }
 
@@ -40,7 +40,7 @@ int main(){
 int fib(int n){
     funct_calls++;
 
-    //Check if we already calculated this
+    //Check for result in memoization array
     if(arr[n] != -1){
         return arr[n];
     }

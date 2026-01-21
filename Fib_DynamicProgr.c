@@ -1,3 +1,4 @@
+//IRERI MARK MUTHOMI SCT221-0098/2023
 #include <stdio.h>
 
 int fib(int n);
